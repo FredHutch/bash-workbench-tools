@@ -3,6 +3,16 @@
 Collection of tools and launchers for the BASH Workbench which may be
 useful to researchers at the Fred Hutch Cancer Research Center and others.
 
+## Contents
+
+### Tools
+
+- `make_tar_gz`: Collect a group of files into a gzip-compressed tarball
+
+### Launchers
+
+- `base`: Simply run a tool in the local system environment
+
 ## BASH Workbench
 
 The BASH Workbench is a utility for sharing analysis tools via configurable
