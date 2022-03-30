@@ -14,6 +14,10 @@ BASH scripts. For more information on this utility, visit
 To install this set of tools on your own system, simply install the
 BASH Workbench and import this repository following its instructions.
 
+```#!/bin/bash
+wb add_repo --remote-name FredHutch/bash-workbench-tools
+```
+
 ## Developers Guide
 
 The tools and launchers defined by this repository are contained in the
