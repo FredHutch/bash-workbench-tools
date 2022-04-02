@@ -1,0 +1,5 @@
+{
+    "name": "Nextflow - Docker",
+    "description": "Configure Nextflow to run with Docker enabled",
+    "args": {}
+}
