@@ -9,6 +9,12 @@ echo """
     docker {
         enabled = true
     }
+    report {
+        enabled = true
+    }
+    trace {
+        enabled = true
+    }
 }
 """ > nextflow.config
 
