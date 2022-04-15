@@ -4,8 +4,26 @@ set -e
 
 echo "Setting up nextflow.config"
 
+# Set up the folders being used for the Singularity cache and working files
+WORK_DIR=${SCRATCH_DIR%/}/work/
+CACHE_DIR=${SCRATCH_DIR%/}/cache/
+
 echo """
-docker.enabled = true
+
+workDir = '${WORK_DIR}'
+
+singularity {
+    enabled = true
+    autoMounts = true
+    cacheDir = '${CACHE_DIR}'
+    runOptions = '--containall --no-home'
+}
+
+process{
+    executor = 'slurm'
+    queue = '${QUEUE}'
+}
+
 report.enabled = true
 trace.enabled = true
 """ > nextflow.config

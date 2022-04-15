@@ -1,0 +1,24 @@
+{
+    "name": "Nextflow - SLURM (FredHutch)",
+    "description": "Configure Nextflow to run on the Fred Hutch SLURM cluster",
+    "args": {
+        "scratch_dir": {
+            "help": "Folder used for temporary storage of intermediate files and cached Singularity images (typically on the scratch filesystem, e.g. /fh/scratch/delete90/lastname_f/temp/nextflow/)",
+            "required": true,
+            "wb_env": "SCRATCH_DIR",
+            "wb_type": "string"
+        },
+        "queue": {
+            "help": "Job submission queue",
+            "wb_env": "QUEUE",
+            "wb_type": "string",
+            "default": "campus-new"
+        },
+        "nxf_ver": {
+            "help": "Nextflow Version",
+            "wb_env": "NXF_VER",
+            "wb_type": "string",
+            "default": "21.10.6"
+        }
+    }
+}
