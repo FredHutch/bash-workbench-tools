@@ -6,7 +6,7 @@
             "help": "Folder used for temporary storage of intermediate files and cached Singularity images (typically on the scratch filesystem, e.g. /fh/scratch/delete90/lastname_f/temp/nextflow/)",
             "required": true,
             "wb_env": "SCRATCH_DIR",
-            "wb_type": "string"
+            "wb_type": "folder"
         },
         "queue": {
             "help": "Job submission queue",
