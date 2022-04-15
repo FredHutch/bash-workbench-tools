@@ -24,6 +24,7 @@ process{
     queue = '${QUEUE}'
 }
 
+docker.enabled = false
 report.enabled = true
 trace.enabled = true
 """ > nextflow.config
