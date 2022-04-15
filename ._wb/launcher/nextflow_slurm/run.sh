@@ -41,4 +41,13 @@ echo
 # Execute the tool in the local environment
 echo "Starting tool"
 echo
+
+# Load the Nextflow module (if running on rhino/gizmo)
+ml Nextflow
+
+# Load the Singularity module (if running on rhino/gizmo with Singularity)
+ml Singularity
+# Make sure that the singularity executables are in the PATH
+export PATH=$SINGULARITYROOT/bin/:$PATH
+
 /bin/bash ._wb/helpers/run_tool
