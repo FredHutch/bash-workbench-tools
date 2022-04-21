@@ -12,6 +12,8 @@ useful to researchers at the Fred Hutch Cancer Research Center and others.
 ### Launchers
 
 - `base`: Simply run a tool in the local system environment
+- `nextflow_docker`: Run a Nextflow workflow using Docker on a local system
+- `nextflow_slurm`: Run a Nextflow workflow using Singularity on a SLURM-based computing cluster
 
 ## BASH Workbench
 
