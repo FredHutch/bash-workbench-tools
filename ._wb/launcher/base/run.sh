@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -em
 
 echo "Running natively without any elaborations"
 
@@ -24,4 +24,4 @@ kill ${PID}
 chmod +x ._wb/bin/stop
 
 # Bring the command back to the foreground
-fg
+fg %1
