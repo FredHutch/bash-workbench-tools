@@ -22,6 +22,8 @@ singularity {
 process{
     executor = 'slurm'
     queue = '${QUEUE}'
+    errorStrategy = 'retry'
+    maxRetries = 2
 }
 
 docker.enabled = false
