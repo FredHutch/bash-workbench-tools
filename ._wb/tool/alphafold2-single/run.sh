@@ -11,6 +11,9 @@ NXF_RUN=._wb/tool/run.nf
 # Nextflow Configuration File
 NXF_CONFIG=._wb/tool/nextflow.config
 
+# Disable ANSI logging
+export NXF_ANSI_LOG=false
+
 # Load the Nextflow module (if running on rhino/gizmo)
 ml Nextflow
 
