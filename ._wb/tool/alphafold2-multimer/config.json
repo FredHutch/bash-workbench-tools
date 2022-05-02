@@ -1,0 +1,16 @@
+{
+    "name": "AlphaFold2 (multimeric)",
+    "description": "Run the AlphaFold2 structural prediction utility on the Fred Hutch SLURM cluster",
+    "args": {
+        "input": {
+            "help": "Folder containing FASTA files for predictions.",
+            "wb_type": "folder",
+            "default": "./"
+        },
+        "prokaryote": {
+            "help": "Proteins are prokaryotic",
+            "wb_type": "select",
+            "wb_choices": ["true", "false"]
+        }
+    }
+}
