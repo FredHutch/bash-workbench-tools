@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
     "name": "Create Compressed Archive (tar.gz)",
     "description": "Combine all of the files in a folder into a single gzip-compressed tarball",
     "args": {
@@ -11,8 +12,7 @@
         "target": {
             "help": "Directory targeted for compression (all subfolders will be included recursively).",
             "wb_env": "TARGET",
-            "wb_type": "folder",
-            "nargs": 1
+            "wb_type": "folder"
         }
     }
 }
