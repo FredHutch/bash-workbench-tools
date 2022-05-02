@@ -1,0 +1,11 @@
+{
+    "name": "AlphaFold2 (single protein)",
+    "description": "Run the AlphaFold2 structural prediction utility on the Fred Hutch SLURM cluster",
+    "args": {
+        "input": {
+            "help": "Folder containing FASTA files for predictions.",
+            "wb_type": "folder",
+            "default": "./"
+        }
+    }
+}
