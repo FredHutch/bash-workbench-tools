@@ -61,8 +61,7 @@
             "wb_type": "bool"
         },
         "workflow_repo": {
-            "name": "Workflow Repository",
-            "description": "Location of workflow repository to run",
+            "description": "Workflow to run (identified by repository location)",
             "wb_type": "string",
             "wb_env": "WORKFLOW_REPO",
             "default": "nf-core/fetchngs"
