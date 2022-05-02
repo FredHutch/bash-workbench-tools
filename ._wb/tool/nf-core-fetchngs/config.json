@@ -4,7 +4,7 @@
     "args": {
         "input": {
             "help": "File containing SRA/ENA/DDBJ/GEO identifiers one per line to download their associated metadata and FastQ files.",
-            "wb_type": "string"
+            "wb_type": "file"
         },
         "input_type": {
             "help": "Specifies the type of identifier provided via `--input` - available options are 'sra' and 'synapse'.",
