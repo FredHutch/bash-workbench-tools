@@ -53,7 +53,7 @@ workflow {
     alphafold(
         Channel
             .fromPath(
-                "${params.input}"
+                "${params.input}/*a"
             )
             .ifEmpty{
                 error "No files found in ${params.input}"
