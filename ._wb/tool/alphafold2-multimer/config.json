@@ -10,7 +10,8 @@
         "prokaryote": {
             "help": "Proteins are prokaryotic",
             "wb_type": "select",
-            "wb_choices": ["true", "false"]
+            "wb_choices": ["true", "false"],
+            "default": "true"
         }
     }
 }
