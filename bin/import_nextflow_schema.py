@@ -104,7 +104,7 @@ def parse_args(args):
             arg = dict()
 
             if "help_text" in val:
-                arg["help"] = f"{val.get('description', '')}\n  {val.get('help_text', '')}"
+                arg["help"] = f"{val.get('description', '')}\n      {val.get('help_text', '')}"
             else:
                 arg["help"] = val["description"]
 
