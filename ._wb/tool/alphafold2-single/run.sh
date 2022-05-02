@@ -20,7 +20,7 @@ nextflow \
     run \
     -c ${NXF_CONFIG} \
     ${NXF_RUN} \
-    --output_folder $OUTPUT_FOLDER \
+    --output_folder ./ \
     -params-file ._wb/tool/params.json \
     -with-report nextflow.report.html \
     -resume
