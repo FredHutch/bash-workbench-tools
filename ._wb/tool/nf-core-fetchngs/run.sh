@@ -13,7 +13,7 @@ nextflow \
     run \
     "${WORKFLOW_REPO}" \
     --outdir "${PWD}" \
-    -params-file ._wb/tool/params.json
+    -params-file ._wb/tool/params.json \
     -resume
 
 # If temporary files were not placed in a separate location
