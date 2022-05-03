@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
     "name": "Nextflow - SLURM (FredHutch)",
     "description": "Configure Nextflow to run on the Fred Hutch SLURM cluster",
     "args": {
@@ -13,6 +14,11 @@
             "wb_env": "QUEUE",
             "wb_type": "string",
             "default": "campus-new"
+        },
+        "tower_token": {
+            "help": "Personal token used to monitor workflow status in Tower",
+            "wb_type": "string",
+            "wb_env": "TOWER_ACCESS_TOKEN"
         },
         "nxf_ver": {
             "help": "Nextflow Version",

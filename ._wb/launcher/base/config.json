@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
     "name": "Basic Launcher",
     "description": "Run a command without any additional configurations",
     "args": {}
