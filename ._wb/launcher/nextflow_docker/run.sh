@@ -10,6 +10,18 @@ report.enabled = true
 trace.enabled = true
 """ > nextflow.config
 
+# If the Tower token was provided
+if [ -z ${TOWER_ACCESS_TOKEN} ]; then
+    echo Tower token is not set
+else
+    echo """
+tower {
+  accessToken = '${TOWER_ACCESS_TOKEN}'
+  enabled = true
+}
+""" >> nextflow.config
+fi
+
 cat nextflow.config
 echo
 
