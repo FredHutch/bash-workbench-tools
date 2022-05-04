@@ -25,9 +25,9 @@ set -e
 ml AlphaFold/2.1.1-fosscuda-2020b
 
 # Get the folder with all of the databases
-DB_DIR="\${ALPHAFOLD_DATA_PATH}"
+DB_DIR="\${ALPHAFOLD_DATA_DIR}"
 
-unset ALPHAFOLD_DATA_PATH
+unset ALPHAFOLD_DATA_DIR
 
 # Make a string indicating that all sequences in the FASTA are prokaryotes
 IS_PROKARYOTE_LIST=\$(cat $fasta | grep '>' | sed 's/>.*/${params.prokaryote},/' | tr -d '\\n' | sed 's/,\$//')
