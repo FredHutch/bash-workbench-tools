@@ -30,7 +30,7 @@ DB_DIR="\${ALPHAFOLD_DATA_DIR}"
 unset ALPHAFOLD_DATA_DIR
 
 # Make a string indicating that all sequences in the FASTA are prokaryotes
-IS_PROKARYOTE_LIST=\$(cat $fasta | grep '>' | sed 's/>.*/${params.prokaryote},/' | tr -d '\\n' | sed 's/,\$//')
+IS_PROKARYOTE_LIST=${params.prokaryote}
 
 echo "Running with --is_prokaryote_list \$IS_PROKARYOTE_LIST"
 
