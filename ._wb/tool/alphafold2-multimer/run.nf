@@ -48,6 +48,7 @@ alphafold \
     --uniref90_database_path \${DB_DIR}/uniref90/uniref90.fasta \
     --pdb_seqres_database_path \${DB_DIR}/pdb_seqres/pdb_seqres.txt \
     --uniprot_database_path \${DB_DIR}/uniprot/uniprot.fasta \
+    --obsolete_pdbs_path \${DB_DIR}/pdb_mmcif/obsolete.dat \
     --data_dir \${DB_DIR}
 """
 }
