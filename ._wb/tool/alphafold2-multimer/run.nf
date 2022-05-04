@@ -25,7 +25,7 @@ set -e
 ml AlphaFold/2.1.1-fosscuda-2020b
 
 # Get the folder with all of the databases
-DB_DIR="${ALPHAFOLD_DATA_PATH}"
+DB_DIR="\${ALPHAFOLD_DATA_PATH}"
 
 unset ALPHAFOLD_DATA_PATH
 
