@@ -1,0 +1,22 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "Download FASTQ from SRA (NCBI)",
+    "description": "Download public data from the NCBI SRA repository in FASTQ format",
+    "args": {
+        "input": {
+            "help": "Text file with one accession (SRR*, DRR*, ERR*) per line",
+            "wb_type": "file",
+            "required": true
+        },
+        "output": {
+            "help": "Folder where output files will be written",
+            "wb_type": "folder",
+            "default": "./fastq"
+        },
+        "options": {
+            "help": "Command line flags used for fastq-dump",
+            "wb_type": "string",
+            "default": "--split-files"
+        }
+    }
+}
