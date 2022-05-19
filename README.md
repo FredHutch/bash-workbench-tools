@@ -8,6 +8,9 @@ useful to researchers at the Fred Hutch Cancer Research Center and others.
 ### Tools
 
 - `make_tar_gz`: Collect a group of files into a gzip-compressed tarball
+- `alphafold2-single`: Run the AlphaFold2 structural prediction utility on the Fred Hutch SLURM cluster
+- `alphafold2-multimer`: Run the AlphaFold2 structural prediction utility _for multimers_ on the Fred Hutch SLURM cluster
+- `download_sra`: Download a collection of FASTQ files from the NCBI SRA repository
 
 ### Launchers
 
