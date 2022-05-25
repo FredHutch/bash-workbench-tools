@@ -8,6 +8,11 @@
             "wb_type": "folder",
             "default": "./"
         },
+        "max_template_date": {
+            "help": "Maximum template date, only use templates before this date (YYYY-MM-DD), default: today",
+            "wb_env": "MAX_TEMPLATE_DATE",
+            "wb_type": "string"
+        },
         "prokaryote": {
             "help": "Proteins are prokaryotic",
             "wb_type": "select",

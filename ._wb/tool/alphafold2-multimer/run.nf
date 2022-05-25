@@ -40,7 +40,7 @@ alphafold \
     --output_dir ./ \
     --is_prokaryote_list \$IS_PROKARYOTE_LIST \
     --model_preset multimer \
-    --max_template_date \$(date +"%Y-%m-%d") \
+    --max_template_date ${params.max_template_date} \
     --bfd_database_path \${DB_DIR}/bfd/bfd_metaclust_clu_complete_id30_c90_final_seq.sorted_opt \
     --mgnify_database_path \${DB_DIR}/mgnify/mgy_clusters_2018_12.fa \
     --template_mmcif_dir \${DB_DIR}/pdb_mmcif/mmcif_files \
