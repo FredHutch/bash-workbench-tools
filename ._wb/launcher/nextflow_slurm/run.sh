@@ -13,7 +13,7 @@ echo """
 workDir = '${WORK_DIR}'
 
 singularity {
-    enabled = true
+    enabled = $(echo $SINGULARITY | tr '[:upper:]' '[:lower:]')
     autoMounts = true
     cacheDir = '${CACHE_DIR}'
     runOptions = '--containall --no-home'
