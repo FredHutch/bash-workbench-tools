@@ -23,7 +23,7 @@ process{
     executor = 'slurm'
     queue = '${QUEUE}'
     errorStrategy = 'retry'
-    maxRetries = 2
+    maxRetries = ${MAX_RETRIES}
 }
 
 docker.enabled = false

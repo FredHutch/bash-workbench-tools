@@ -15,6 +15,12 @@
             "wb_type": "string",
             "default": "campus-new"
         },
+        "max_retries": {
+            "help": "Maximum number of times to retry failed jobs",
+            "wb_env": "MAX_RETRIES",
+            "wb_type": "integer",
+            "default": "2"
+        },
         "tower_token": {
             "help": "Personal token used to monitor workflow status in Tower",
             "wb_type": "string",
@@ -29,7 +35,8 @@
         "singularity": {
             "help": "Enable Singularity support for Docker containers",
             "wb_type": "bool",
-            "default": true
+            "default": true,
+            "wb_env": "SINGULARITY"
         }
     }
 }
