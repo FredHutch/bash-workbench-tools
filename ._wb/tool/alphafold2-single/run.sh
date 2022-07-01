@@ -26,4 +26,6 @@ nextflow \
     --output_folder ./ \
     -params-file ._wb/tool/params.json \
     -with-report nextflow.report.html \
+    -process.errorStrategy ${ERROR_STRATEGY} \
+    -process.maxRetries ${MAX_RETRIES} \
     -resume

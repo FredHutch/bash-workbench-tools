@@ -18,6 +18,19 @@
             "wb_type": "select",
             "wb_choices": ["true", "false"],
             "default": "true"
+        },
+        "error_strategy": {
+            "help": "When a job fails either (a) try it again or (b) wait for all running jobs to finish",
+            "wb_type": "string",
+            "wb_choices": ["retry", "finish"],
+            "default": "finish",
+            "wb_env": "ERROR_STRATEGY"
+        },
+        "max_retries": {
+            "help": "When retrying failed jobs, set the maximum number of times to retry",
+            "wb_type": "integer",
+            "default": "3",
+            "wb_env": "MAX_RETRIES"
         }
     }
 }

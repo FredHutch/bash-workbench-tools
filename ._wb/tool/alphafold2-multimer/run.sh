@@ -33,4 +33,6 @@ nextflow \
     --max_template_date "${MAX_TEMPLATE_DATE}" \
     -params-file ._wb/tool/params.json \
     -with-report nextflow.report.html \
+    -process.errorStrategy ${ERROR_STRATEGY} \
+    -process.maxRetries ${MAX_RETRIES} \
     -resume
