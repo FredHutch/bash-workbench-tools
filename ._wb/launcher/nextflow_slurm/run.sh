@@ -8,6 +8,13 @@ echo "Setting up nextflow.config"
 WORK_DIR=${SCRATCH_DIR%/}/work/
 CACHE_DIR=${SCRATCH_DIR%/}/cache/
 
+# If using the restart queue, add additional cluster options
+if [[ "${QUEUE}" == "restart-new" ]]; then
+    PROCESS_OPT="clusterOptions = '--qos=\"restart-new\" --wrap=hostname'"
+else
+    PROCESS_OPT=""
+fi
+
 echo """
 
 workDir = '${WORK_DIR}'
@@ -24,6 +31,7 @@ process{
     queue = '${QUEUE}'
     errorStrategy = 'retry'
     maxRetries = ${MAX_RETRIES}
+    ${PROCESS_OPT}
 }
 
 docker.enabled = false

@@ -13,6 +13,7 @@
             "help": "Job submission queue",
             "wb_env": "QUEUE",
             "wb_type": "string",
+            "wb_choices": ["campus-new", "restart-new"],
             "default": "campus-new"
         },
         "max_retries": {
