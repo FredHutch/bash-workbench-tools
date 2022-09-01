@@ -1,0 +1,22 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "MetaPhlAn 3.0",
+    "description": "Taxonomic classification of paired-end WGS data",
+    "args": {
+        "input_folder": {
+            "help": "Folder containing all input files (FASTQ pairs)",
+            "required": true,
+            "wb_type": "folder"
+        },
+        "file_suffix": {
+            "help": "File ending for all input FASTQ files",
+            "wb_type": "string",
+            "default": "fastq.gz"
+        },
+        "db": {
+            "help": "Path to reference database folder",
+            "wb_type": "folder",
+            "default": "/shared/biodata/microbiome/metaphlan3/2022-04-28"
+        }
+    }
+}
