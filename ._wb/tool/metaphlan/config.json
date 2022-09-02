@@ -26,12 +26,12 @@
         "cpus": {
             "help": "Number of CPUs to allocate for each process",
             "wb_type": "integer",
-            "default": "16"
+            "default": "1"
         },
         "memory_gb": {
             "help": "Amount of memory (GBs) to allocate for each process",
             "wb_type": "integer",
-            "default": "20"
+            "default": "4"
         }
     }
 }
