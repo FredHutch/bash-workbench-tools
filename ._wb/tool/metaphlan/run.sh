@@ -14,6 +14,7 @@ echo Starting workflow
 nextflow \
     run \
     "${WORKFLOW_REPO}" \
+    -r main \
     --output "${PWD}" \
     -params-file ._wb/tool/params.json \
     -resume
