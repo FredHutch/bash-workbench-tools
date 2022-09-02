@@ -21,7 +21,7 @@
         "db": {
             "help": "Path to reference database folder",
             "wb_type": "folder",
-            "default": "/shared/biodata/microbiome/metaphlan3/2022-04-28/"
+            "default": "/shared/biodata/microbiome/metaphlan3/2022-04-28/mpa_v30_CHOCOPhlAn_201901"
         }
     }
 }
