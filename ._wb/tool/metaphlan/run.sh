@@ -17,7 +17,8 @@ nextflow \
     -r main \
     --output "${PWD}" \
     -params-file ._wb/tool/params.json \
-    -resume
+    -resume \
+    -latest
 
 # If temporary files were not placed in a separate location
 if [ -d work ]; then

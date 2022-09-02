@@ -13,6 +13,11 @@
             "wb_type": "string",
             "default": "fastq.gz"
         },
+        "file_spacer": {
+            "help": "Characters found in the file name, between the sample name and the {1,2} switch (default: <SAMPLE>_{1,2}.fastq.gz)",
+            "wb_type": "string",
+            "default": "_"
+        },
         "db": {
             "help": "Path to reference database folder",
             "wb_type": "folder",
