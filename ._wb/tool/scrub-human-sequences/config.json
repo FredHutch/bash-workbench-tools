@@ -1,0 +1,29 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "Scrub Human Sequences",
+    "description": "Mask human sequences in FASTQ files with N's",
+    "args": {
+        "input_folder": {
+            "help": "Folder containing all input files (FASTQ pairs)",
+            "required": true,
+            "wb_env": "INPUT_FOLDER",
+            "wb_type": "folder"
+        },
+        "file_suffix": {
+            "help": "File ending for all input FASTQ files to process",
+            "wb_type": "string",
+            "wb_env": "FILE_SUFFIX",
+            "default": "fastq.gz"
+        },
+        "cpus": {
+            "help": "Number of CPUs to allocate for each process",
+            "wb_type": "integer",
+            "default": "1"
+        },
+        "memory_gb": {
+            "help": "Amount of memory (GBs) to allocate for each process",
+            "wb_type": "integer",
+            "default": "4"
+        }
+    }
+}
