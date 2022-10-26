@@ -31,7 +31,7 @@
             "help": "Nextflow Version",
             "wb_env": "NXF_VER",
             "wb_type": "string",
-            "default": "21.10.6"
+            "default": "22.10.0"
         },
         "singularity": {
             "help": "Enable Singularity support for Docker containers",
