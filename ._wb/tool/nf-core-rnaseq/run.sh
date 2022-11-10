@@ -14,7 +14,7 @@ nextflow \
     nf-core/rnaseq \
     -r "${VERSION}" \
     --outdir "${PWD}" \
-    --schema_ignore_params version \
+    --schema_ignore_params rnaseq_version,genomes \
     -params-file ._wb/tool/params.json \
     -resume
 

@@ -98,7 +98,7 @@
             "default": true,
             "wb_type": "bool"
         },
-        "version": {
+        "rnaseq_version": {
             "help": "Version of the nf-core/rnaseq workflow to run",
             "default": "3.9",
             "wb_env": "VERSION",
