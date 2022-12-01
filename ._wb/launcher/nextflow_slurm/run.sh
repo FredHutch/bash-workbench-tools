@@ -7,6 +7,7 @@ echo "Setting up nextflow.config"
 # Set up the folders being used for the Singularity cache and working files
 WORK_DIR=${SCRATCH_DIR%/}/work/
 CACHE_DIR=${SCRATCH_DIR%/}/cache/
+TMP_DIR=${SCRATCH_DIR%/}/tmp/
 
 # If using the restart queue, add additional cluster options
 if [[ "${QUEUE}" == "restart-new" ]]; then
@@ -33,6 +34,8 @@ process{
     maxRetries = ${MAX_RETRIES}
     ${PROCESS_OPT}
 }
+
+env.TMP_DIR = '${TMP_DIR}'
 
 docker.enabled = false
 report.enabled = true
