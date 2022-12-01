@@ -11,6 +11,10 @@ useful to researchers at the Fred Hutch Cancer Research Center and others.
 - `alphafold2-single`: Run the AlphaFold2 structural prediction utility on the Fred Hutch SLURM cluster
 - `alphafold2-multimer`: Run the AlphaFold2 structural prediction utility _for multimers_ on the Fred Hutch SLURM cluster
 - `download_sra`: Download a collection of FASTQ files from the NCBI SRA repository
+- `metaphlan`: Perform taxonomic annotation on a set of FASTQ files
+- `nf-core-fetchngs`: Run the [nf-core/fetchngs workflow](https://nf-co.re/fetchngs)
+- `nf-core-rnaseq`: Run the [nf-core/rnaseq workflow](https://nf-co.re/rnaseq)
+- `scrub-human-sequences`: Remove human sequences from a set of FASTQ files
 
 ### Launchers
 
