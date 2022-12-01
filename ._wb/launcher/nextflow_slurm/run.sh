@@ -38,7 +38,10 @@ process{
     ${PROCESS_OPT}
 }
 
-env.TMP_DIR = '${TMP_DIR}'
+env{
+    TMP_DIR = '${TMP_DIR}'
+    TMPDIR = '${TMP_DIR}'
+}
 
 docker.enabled = false
 report.enabled = true
