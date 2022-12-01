@@ -5,6 +5,9 @@ set -em
 echo "Setting up nextflow.config"
 
 # Set up the folders being used for the Singularity cache and working files
+for suffix in work cache tmp; do
+    mkdir -p ${SCRATCH_DIR%/}/${suffix}
+done
 WORK_DIR=${SCRATCH_DIR%/}/work/
 CACHE_DIR=${SCRATCH_DIR%/}/cache/
 TMP_DIR=${SCRATCH_DIR%/}/tmp/
