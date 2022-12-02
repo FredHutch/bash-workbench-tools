@@ -103,6 +103,11 @@
             "default": "3.9",
             "wb_env": "VERSION",
             "wb_type": "string"
+        },
+        "skip_multiqc": {
+            "help": "If specified, skip the MultiQC step",
+            "default": false,
+            "wb_type": "bool"
         }
     }
 }
