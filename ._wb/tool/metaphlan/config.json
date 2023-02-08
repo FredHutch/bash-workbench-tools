@@ -21,7 +21,7 @@
         "db": {
             "help": "Path to reference database folder",
             "wb_type": "folder",
-            "default": "/shared/biodata/microbiome/metaphlan3/2022-04-28/mpa_v30_CHOCOPhlAn_201901"
+            "default": "/shared/biodata/microbiome/metaphlan4/2023-02-02/mpa_vJan21_CHOCOPhlAnSGB_202103"
         },
         "cpus": {
             "help": "Number of CPUs to allocate for each process",
