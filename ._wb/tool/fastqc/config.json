@@ -1,0 +1,12 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "FastQC",
+    "description": "Generate quality control metrics for NGS data (FASTQ/BAM)",
+    "args": {
+        "input": {
+            "help": "Folder containing all input files (FASTQ/BAM)",
+            "required": true,
+            "wb_type": "folder"
+        }
+    }
+}
