@@ -1,0 +1,28 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "(nf-core) ampliseq",
+    "description": "Pipeline to analyze microbiome samples with 16S sequencing (see https://nf-co.re/ampliseq)",
+    "args": {
+        "input": {
+            "help": "Path to comma-separated file containing information about the samples in the experiment.",
+            "wb_type": "file",
+            "required": true
+        },
+        "FW_primer": {
+            "help": "Forward Primer Sequence",
+            "wb_type": "string",
+            "default": "GTGYCAGCMGCCGCGGTAA"
+        },
+        "RV_primer": {
+            "help": "Reverse Primer Sequence",
+            "wb_type": "string",
+            "default": "GGACTACNVGGGTWTCTAAT"
+        },
+        "ampliseq_version": {
+            "help": "Version of the nf-core/ampliseq workflow to run",
+            "default": "2.5.0",
+            "wb_env": "VERSION",
+            "wb_type": "string"
+        }
+    }
+}
