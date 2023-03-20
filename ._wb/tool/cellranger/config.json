@@ -1,0 +1,24 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "CellRanger Count",
+    "description": "Run CellRanger Count",
+    "args": {
+        "INPUT_FOLDER": {
+            "help": "Select the input folder",
+            "wb_type": "folder"
+        },
+        "REF_DB": {
+            "help": "Reference database",
+            "wb_type": "folder",
+            "default": "/shared/biodata/whatever/"
+        },
+        "CHEMISTRY": {
+            "help": "Chemistry used in CellRanger library prep",
+            "wb_type": "select",
+            "wb_choices": [
+                "5GEX",
+                "3GEX"
+            ]
+        }
+    }
+}
