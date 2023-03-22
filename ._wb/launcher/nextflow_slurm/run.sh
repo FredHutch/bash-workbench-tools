@@ -27,7 +27,7 @@ singularity {
     enabled = $(echo $SINGULARITY | tr '[:upper:]' '[:lower:]')
     autoMounts = true
     cacheDir = '${CACHE_DIR}'
-    runOptions = '--no-home'
+    runOptions = '--no-home -u'
 }
 
 process{
