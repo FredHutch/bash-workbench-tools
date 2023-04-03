@@ -1,0 +1,38 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "(nf-core) mag",
+    "description": "Pipeline for assembly, binning and annotation of metagenomes (see https://nf-co.re/mag)",
+    "args": {
+        "input": {
+            "help": "Path to comma-separated file containing information about the samples in the experiment (header: sample,group,short_reads_1,short_reads_2,long_reads).",
+            "wb_type": "file",
+            "required": true
+        },
+        "coassemble_group": {
+            "help": "Co-assemble samples within one group, instead of assembling each sample separately",
+            "wb_type": "bool",
+            "default": true
+        },
+        "binning_map_mode": {
+            "help": "Defines mapping strategy to compute co-abundances for binning, i.e. which samples will be mapped against the assembly",
+            "wb_type": "select",
+            "wb_choices": [
+                "all",
+                "group",
+                "own"
+            ],
+            "default": "group"
+        },
+        "ancient_dna": {
+            "help": "Turn on/off the ancient DNA subworkflow",
+            "wb_type": "bool",
+            "default": false
+        },
+        "mag_version": {
+            "help": "Version of the nf-core/mag workflow to run",
+            "default": "2.3.0",
+            "wb_env": "VERSION",
+            "wb_type": "string"
+        }
+    }
+}
