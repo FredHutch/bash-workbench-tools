@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "BWA - Index Genome",
+    "description": "Create a searchable index of genome file(s)",
+    "args": {
+        "input": {
+            "help": "Folder containing one or more FASTA files to index (.fna, .fa, or .fasta) (.gz optional)",
+            "wb_type": "folder",
+            "required": true,
+            "wb_env": "INPUT_FOLDER"
+        }
+    }
+}
