@@ -6,7 +6,7 @@ nextflow.enable.dsl=2
 process bwa_mem {
     // Write output files to the output directory
     publishDir "${params.output}", mode: "copy", overwrite: true
-    cpus ${params.cpus}
+    cpus "${params.cpus}"
     memory "${params.mem_gbs}.GB"
 
     input:
