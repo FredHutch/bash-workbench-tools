@@ -1,0 +1,27 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "Align paired reads to a reference (BWA)",
+    "description": "Align short reads in FASTQ format against an indexed reference genome.",
+    "args": {
+        "reads": {
+            "help": "Path to input data, using wildcards (*) for sample IDs and {1,2} to indicate pairings (e.g. /path/to/*_R{1,2}.fastq.gz)",
+            "wb_type": "file",
+            "required": true
+        },
+        "genome": {
+            "help": "Reference genome which has already been indexed with BWA",
+            "wb_type": "file",
+            "required": true
+        },
+        "cpus": {
+            "help": "Number of CPUs to use per task",
+            "wb_type": "integer",
+            "default": 4
+        },
+        "mem_gbs": {
+            "help": "Amount of memory (GBs) to use per task",
+            "wb_type": "integer",
+            "default": 8
+        }
+    }
+}
