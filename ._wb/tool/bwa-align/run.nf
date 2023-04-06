@@ -38,7 +38,7 @@ bwa mem \
     ${R1} \
     ${R2} \
     | \
-    samtools -S -b > ${sample}.bam
+    samtools -b > ${sample}.bam
 
 echo Indexing alignments
 samtools index ${sample}.bam
