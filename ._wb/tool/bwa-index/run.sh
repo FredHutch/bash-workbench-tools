@@ -5,6 +5,8 @@ set -euo pipefail
 date >> log.txt
 echo "Loading BWA" >> log.txt
 ml BWA
+echo "Loading tabix" >> log.txt
+ml tabix
 
 date >> log.txt
 echo "Indexing all FASTA files in ${INPUT_FOLDER}" >> log.txt
@@ -35,7 +37,7 @@ for suffix in .fa .fna .fasta; do
 done | \
     sed 's/ .*//' | \
     sed '/^$/d' | \
-    gzip -c > genomes.fasta.gz
+    bgzip -c > genomes.fasta.gz
 
 date >> log.txt
 echo "Building BWA index" >> log.txt
