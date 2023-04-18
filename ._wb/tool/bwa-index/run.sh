@@ -33,6 +33,7 @@ for suffix in .fa .fna .fasta; do
     done
 
 done | \
+    sed 's/ .*//' | \
     sed '/^$/d' | \
     gzip -c > genomes.fasta.gz
 
