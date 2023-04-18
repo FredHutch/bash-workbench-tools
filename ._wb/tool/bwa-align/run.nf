@@ -37,8 +37,8 @@ bwa mem \
     reference/\${REF_BASE} \
     ${R1} \
     ${R2} \
-    | \
-    samtools -b > ${sample}.bam
+    | samtools view -b \
+    | samtools sort - > ${sample}.bam
 
 echo Indexing alignments
 samtools index ${sample}.bam
