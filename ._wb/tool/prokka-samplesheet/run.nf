@@ -103,6 +103,17 @@ process run_prokka {
 
 set -euxo pipefail
 
+# If the input is a symlink
+if [ -L "${fasta}" ]; then
+
+    # Resolve it
+    echo "Resolving symlink for ${fasta}"
+    SOURCE=\$(readlink "${fasta}")
+    rm "${fasta}"
+    cp "\${SOURCE}" "${fasta}"
+
+fi
+
 echo Running Prokka
 
 prokka \
