@@ -29,9 +29,11 @@ NXF_CONFIG=._wb/tool/nextflow.config
 export NXF_ANSI_LOG=false
 
 # Load the Nextflow module (if running on rhino/gizmo)
+echo "Loading the Nextflow module"
 ml Nextflow
 
 # Run the workflow
+echo "Running the workflow"
 NXF_VER=$NXF_VER \
 nextflow \
     run \
