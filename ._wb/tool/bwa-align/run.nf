@@ -34,6 +34,7 @@ ls reference/\${REF_BASE}
 echo Running alignments
 bwa mem \
     -t ${task.cpus} \
+    ${params.extra_args} \
     reference/\${REF_BASE} \
     ${R1} \
     ${R2} \

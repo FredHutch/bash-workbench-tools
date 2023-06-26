@@ -22,6 +22,11 @@
             "help": "Amount of memory (GBs) to use per task",
             "wb_type": "integer",
             "default": 8
+        },
+        "extra_args": {
+            "help": "(optional) Additional arguments to bwa mem",
+            "wb_type": "string",
+            "default": ""
         }
     }
 }
