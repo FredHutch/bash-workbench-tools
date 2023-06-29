@@ -1,0 +1,43 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "Annotate Protein Sequences (eggNOG-mapper)",
+    "description": "Run the eggNOG mapper annotation algorithm on a FASTA of protein sequences",
+    "args": {
+        "fasta": {
+            "help": "Protein FASTA with sequences to annotate",
+            "wb_type": "file",
+            "required": true
+        },
+        "eggnog_db": {
+            "help": "eggNOG database file",
+            "wb_type": "file",
+            "default": "/shared/biodata/microbiome/geneshot/2021-01-27-geneshot-DB/DB.eggnog.db"
+        },
+        "eggnog_dmnd": {
+            "help": "eggNOG reference protein index file",
+            "wb_type": "file",
+            "default": "/shared/biodata/microbiome/geneshot/2021-01-27-geneshot-DB/DB.eggnog_proteins.dmnd"
+        },
+        "options": {
+            "help": "Optional command line flags for emapper.py",
+            "wb_type": "string",
+            "default": ""
+        },
+        "cpus": {
+            "help": "Number of CPUs to use",
+            "wb_type": "integer",
+            "default": "16"
+        },
+        "memory_gb": {
+            "help": "Amount of memory to use (GBs)",
+            "wb_type": "integer",
+            "default": "60"
+        },
+        "nextflow_version": {
+            "help": "Nextflow version",
+            "wb_type": "string",
+            "default": "23.04.2",
+            "wb_env": "NXF_VER"
+        }
+    }
+}
