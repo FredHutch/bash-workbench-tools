@@ -6,6 +6,7 @@ nextflow.enable.dsl=2
 process emapper {
     // Write output files to the output directory
     publishDir "${params.output}", mode: "copy", overwrite: true
+    container "quay.io/biocontainers/eggnog-mapper:2.0.1--py_1"
     cpus params.cpus
     memory "${params.memory_gb}.GB"
 
