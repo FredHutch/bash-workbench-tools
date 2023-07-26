@@ -1,22 +1,25 @@
 {
     "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
-    "name": "MetaPhlAn 4.0",
-    "description": "Taxonomic classification of paired-end WGS data",
+    "name": "StrainPhlAn 4.0",
+    "description": "Strain-level analysis of metagenome using MetaPhlAn 4.0 results",
     "args": {
         "input_folder": {
-            "help": "Folder containing all input files (FASTQ pairs)",
+            "help": "Folder containing MetaPhlAn results - SAM files",
             "required": true,
             "wb_type": "folder"
         },
-        "file_suffix": {
-            "help": "File ending for all input FASTQ files",
+        "clades": {
+            "help": "Clades to analyze (e.g. t__SGB1877,t__SGB2878)",
             "wb_type": "string",
-            "default": "fastq.gz"
+            "required": true
         },
-        "file_spacer": {
-            "help": "Characters found in the file name, between the sample name and the {1,2} switch (default: <SAMPLE>_{1,2}.fastq.gz)",
-            "wb_type": "string",
-            "default": "_"
+        "reference_genomes": {
+            "help": "Optional set of reference genomes to include (use wildcard for multiple)",
+            "wb_type": "file"
+        },
+        "metadata": {
+            "help": "Optional metadata file, tab-separated, keyed on 'sampleID'",
+            "wb_type": "file"
         },
         "db": {
             "help": "Path to reference database folder",
