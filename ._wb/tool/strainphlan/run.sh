@@ -15,6 +15,7 @@ nextflow \
     run \
     "${WORKFLOW_REPO}" \
     -r main \
+    -main-script strainphlan.nf \
     --output "${PWD}" \
     -params-file ._wb/tool/params.json \
     -resume \
