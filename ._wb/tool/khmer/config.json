@@ -1,0 +1,46 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "khmer - diginorm",
+    "description": "Normalization of WGS read depth using k-mers",
+    "args": {
+        "indir": {
+            "help": "Folder containing all input files (FASTQ pairs)",
+            "required": true,
+            "wb_type": "folder"
+        },
+        "paired": {
+            "help": "FASTQ files contain paired-end data",
+            "wb_type": "bool"
+        },
+        "file_suffix": {
+            "help": "File ending for all input FASTQ files",
+            "wb_type": "string",
+            "default": ".fastq.gz"
+        },
+        "file_spacer": {
+            "help": "Characters found in the file name, between the sample name and the {1,2} switch (default: <SAMPLE>_{1,2}.fastq.gz)",
+            "wb_type": "string",
+            "default": "_R"
+        },
+        "median_abund": {
+            "help": "Target median abundance of k-mers in output",
+            "wb_type": "integer",
+            "default": "20"
+        },
+        "min_abund": {
+            "help": "Minimum threshold for k-mer abundances",
+            "wb_type": "integer",
+            "default": "5"
+        },
+        "cpus": {
+            "help": "Number of CPUs to allocate for each process",
+            "wb_type": "integer",
+            "default": "8"
+        },
+        "memory_gb": {
+            "help": "Amount of memory (GBs) to allocate for each process",
+            "wb_type": "integer",
+            "default": "20"
+        }
+    }
+}
