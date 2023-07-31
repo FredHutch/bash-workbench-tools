@@ -10,7 +10,8 @@
         },
         "paired": {
             "help": "FASTQ files contain paired-end data",
-            "wb_type": "bool"
+            "wb_type": "bool",
+            "default": true
         },
         "file_suffix": {
             "help": "File ending for all input FASTQ files",
