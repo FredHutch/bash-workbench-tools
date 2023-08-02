@@ -26,6 +26,26 @@
             "wb_type": "folder",
             "default": "/shared/biodata/microbiome/metaphlan4/2023-02-02/mpa_vJan21_CHOCOPhlAnSGB_202103"
         },
+        "breadth_threshold": {
+            "help": "Threshold defining the minimum breadth of coverage for the markers as a percentage value",
+            "wb_type": "integer",
+            "default": "80"
+        },
+        "min_reads_aligning": {
+            "help": "Minimum number of reads aligning to a clade per sample",
+            "wb_type": "integer",
+            "default": "8"
+        },
+        "marker_in_n_samples": {
+            "help": "Minimum number of samples required to keep a marker",
+            "wb_type": "integer",
+            "default": "2"
+        },
+        "sample_with_n_markers": {
+            "help": "Minimum percentage of markers required to retain a sample",
+            "wb_type": "integer",
+            "default": "80"
+        },
         "cpus": {
             "help": "Number of CPUs to allocate for each process",
             "wb_type": "integer",
