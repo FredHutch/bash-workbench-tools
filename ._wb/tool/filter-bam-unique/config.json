@@ -1,0 +1,12 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "BAM-ReadPair-Processing",
+    "description": "Filter BAM files to keep only uniquely aligning readpairs",
+    "args": {
+        "indir": {
+            "help": "Folder containing BAM files to process",
+            "wb_type": "folder",
+            "required": true
+        }
+    }
+}
