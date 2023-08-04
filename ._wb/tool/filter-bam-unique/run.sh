@@ -15,7 +15,7 @@ nextflow \
     run \
     "${WORKFLOW_REPO}" \
     -r main \
-    -profile gizmo \
+    -profile docker \
     --outdir "${PWD}" \
     -params-file ._wb/tool/params.json \
     -resume \
