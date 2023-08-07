@@ -75,10 +75,10 @@ echo "Starting tool"
 echo
 
 # Load the Nextflow module (if running on rhino/gizmo)
-ml Nextflow
+ml ${NEXTFLOW_MODULE}
 
 # Load the Singularity module (if running on rhino/gizmo with Singularity)
-ml Singularity
+ml ${SINGULARITY_MODULE}
 # Make sure that the singularity executables are in the PATH
 export PATH=$SINGULARITYROOT/bin/:$PATH
 

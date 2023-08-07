@@ -38,6 +38,18 @@
             "wb_type": "bool",
             "default": true,
             "wb_env": "SINGULARITY"
+        },
+        "nextflow_module": {
+            "help": "EasyBuild module used to load Nextflow",
+            "wb_type": "string",
+            "default": "Nextflow",
+            "wb_env": "NEXTFLOW_MODULE"
+        },
+        "singularity_module": {
+            "help": "EasyBuild module used to load Singularity",
+            "wb_type": "string",
+            "default": "Singularity",
+            "wb_env": "SINGULARITY_MODULE"
         }
     }
 }
