@@ -7,8 +7,12 @@ echo
 echo "Running workflow nf-core/rnaseq v${VERSION} from ${PWD}"
 echo
 
+echo "Using Nextflow version ${NXF_VER}"
+echo
+
 # Run the workflow
 echo Starting workflow
+NXF_VER=${NXF_VER} \
 nextflow \
     run \
     nf-core/rnaseq \
