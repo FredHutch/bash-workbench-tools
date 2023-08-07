@@ -67,6 +67,7 @@ echo
 export NXF_ANSI_LOG=false
 
 # Print the Nextflow version being used
+export NXF_VER=$NXF_VER
 echo "Nextflow Version: ${NXF_VER}"
 echo
 
