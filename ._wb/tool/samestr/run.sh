@@ -17,11 +17,12 @@ echo
 echo Starting workflow
 nextflow \
     run \
-    "${TOOL_REPO}" \
+    CirroBio/nf-samestr \
     --output "${PWD}" \
     -params-file ._wb/tool/params.json \
     -process.cpus "${CPUS}" \
     -process.memory "${MEMORY_GB}.GB" \
+    -latest \
     -resume
 
 # If temporary files were not placed in a separate location
