@@ -18,6 +18,7 @@ echo Starting workflow
 nextflow \
     run \
     CirroBio/nf-samestr \
+    -r main \
     --output "${PWD}" \
     -params-file ._wb/tool/params.json \
     -process.cpus "${CPUS}" \
