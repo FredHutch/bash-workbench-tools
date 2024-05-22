@@ -29,6 +29,9 @@ echo
 echo "Running workflow '${WORKFLOW_REPO}' from ${PWD}"
 echo
 
+# Pull the workflow
+nextflow pull "${WORKFLOW_REPO}"
+
 # Run the workflow
 echo Starting workflow
 nextflow \
