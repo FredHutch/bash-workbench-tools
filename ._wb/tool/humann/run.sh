@@ -12,7 +12,7 @@ echo "File Pattern: SAMPLE${INPUT_SPACER}{1,2}${INPUT_SUFFIX}"
 echo
 
 echo sample,fastq_1,fastq_2 > samplesheet.csv
-for R1 in $(find "${INPUT_DIR}" -name "SAMPLE${INPUT_SPACER}1${INPUT_SUFFIX}" | sort); do
+for R1 in $(find "${INPUT_DIR}/" -name "*${INPUT_SPACER}1${INPUT_SUFFIX}" | sort); do
     SAMPLE=$(basename "${R1}" | sed "s/${INPUT_SPACER}1${INPUT_SUFFIX}//")
     R2=$(echo "${R1}" | sed "s/1${INPUT_SUFFIX}/2${INPUT_SUFFIX}/")
     echo "${SAMPLE},${R1},${R2}"
