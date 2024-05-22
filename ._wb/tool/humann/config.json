@@ -1,0 +1,78 @@
+{
+    "$schema": "https://raw.githubusercontent.com/FredHutch/bash-workbench/main/docs/schema.json",
+    "name": "Metagenomic Pathways (HUMAnN v3)",
+    "description": "Prediction of metabolic pathways encoded by a microbial community using the HUMAnN v3 software suite",
+    "args": {
+        "input_directory": {
+            "help": "Directory containing input FASTQ files",
+            "required": true,
+            "wb_type": "folder",
+            "wb_env": "INPUT_DIR"
+        },
+        "suffix": {
+            "help": "File ending for all input FASTQ files",
+            "wb_type": "string",
+            "default": ".fastq.gz",
+            "wb_env": "INPUT_SUFFIX"
+        },
+        "spacer": {
+            "help": "Characters found in the file name, between the sample name and the {1,2} switch (default: <SAMPLE>_{1,2}.fastq.gz)",
+            "wb_type": "string",
+            "default": "_R",
+            "wb_env": "INPUT_SPACER"
+        },
+        "metaphlan_db": {
+            "help": "Path to the MetaPhlAn database",
+            "required": true,
+            "wb_type": "string",
+            "default": "/shared/biodata/microbiome/metaphlan4/2023-12-20/mpa_vJun23_CHOCOPhlAnSGB_202307"
+        },
+        "chocophlan_db": {
+            "help": "Path to the ChocoPhlAn database",
+            "required": true,
+            "wb_type": "file",
+            "default": "/shared/biodata/microbiome/humann3/full_chocophlan.v201901_v31.tar.gz"
+        },
+        "translated_search_db": {
+            "help": "Database of translated search sequences",
+            "required": true,
+            "wb_type": "file",
+            "default": "/shared/biodata/microbiome/humann3/uniref50_201901b_full.dmnd"
+        },
+        "prescreen_threshold": {
+            "help": "Minimum estimated genome coverage for inclusion in pangenome search",
+            "wb_type": "string",
+            "default": "0.5"
+        },
+        "nucleotide_identity_threshold": {
+            "help": "Identity threshold for nucleotide alignments",
+            "wb_type": "string",
+            "default": "50.0"
+        },
+        "nucleotide_query_coverage_threshold": {
+            "help": "Query coverage threshold for nucleotide alignments",
+            "wb_type": "string",
+            "default": "90.0"
+        },
+        "nucleotide_subject_coverage_threshold": {
+            "help": "Subject coverage threshold for nucleotide alignments",
+            "wb_type": "string",
+            "default": "50.0"
+        },
+        "translated_identity_threshold": {
+            "help": "Identity threshold for translated alignments",
+            "wb_type": "string",
+            "default": "50.0"
+        },
+        "translated_query_coverage_threshold": {
+            "help": "Query coverage threshold for translated alignments",
+            "wb_type": "string",
+            "default": "90.0"
+        },
+        "translated_subject_coverage_threshold": {
+            "help": "Subject coverage threshold for translated alignments",
+            "wb_type": "string",
+            "default": "50.0"
+        }
+    }
+}
